@@ -5,6 +5,10 @@
 --main-bgc: #2196F3;
 --secondary-color-text: #212121; 
 --main-color-text: #757575;
+--header-footer-bgc: #2F303A;
+--button-filter-bgc: #F5F4FA;
+--team-bgc: #F5F4FA;
+--header-logo: black;
 }
 
 
@@ -33,7 +37,7 @@ body{
    
     
     .header-logo-right{
-        color: black;
+        color: var(--header-logo)
     }
 
 
@@ -79,7 +83,7 @@ body{
 
 /*===========HERO===========*/
 .hero{
-    background-color: #2F303A;
+    background-color: var(--header-footer-bgc)
     
 }
 
@@ -123,7 +127,8 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: var(--secondary-color-text)
+color: var(--secondary-color-text);
+background-color: var(--main-light-color);
 }
 
 .benefits-text{
@@ -132,7 +137,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--main-color-text)
 }
 
 /*===========Прииимущества============>*/
@@ -145,13 +150,20 @@ font-weight: 700;
 font-size: 36px;
 line-height: 42px;
 letter-spacing: 0.03em;
-color: var(--secondary-color-text)
+color: var(--secondary-color-text);
+background-color: var(--main-light-color);
 }
 
 /*===========Чем мы занимаемся============>*/
 
 
 /*===========Наша команда============*/
+.team{
+    background-color: var(--team-bgc)
+}
+.team-item{
+    background-color: var(--main-light-color);
+}
 .team-title{
 font-family: var(--main-font);
 font-weight: 700;
@@ -210,15 +222,19 @@ color: var(--main-light-color);
 color: var(--accent-color);
 }
 .footer{
-    background-color: #2F303A;
+    background-color: var(--header-footer-bgc)
 }
 /*===========FOOTER============>*/
 
 /*===========PORTFOLIO============*/
+.potfolio{
+    background-color: var(--main-light-color)
+}
+/*===========PORTFOLIO============*/
 /*===========Filter============*/
 .filter-button{
     color: 212121;
-    background-color: #F5F4FA;
+    background-color: var(--button-filter-bgc)
 }
 .filter-button:hover,
 .filter-button:focus{
@@ -227,6 +243,9 @@ color: var(--accent-color);
 
 .filter-accent{
     background-color: var(--main-bgc)
+}
+.filter-item{
+    background-color: var(--main-light-color);
 }
 
 /*===========Filter============>*/
