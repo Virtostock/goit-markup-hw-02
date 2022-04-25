@@ -9,6 +9,7 @@
 --button-filter-bgc: #F5F4FA;
 --team-bgc: #F5F4FA;
 --header-logo: black;
+--footer-contact-color: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -133,7 +134,6 @@ background-color: var(--main-light-color);
 
 .benefits-text{
 font-family: var(--main-font);
-font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -184,7 +184,6 @@ color: var(--secondary-color-text)
 
 .team-profession{
 font-family: var(--main-font);
-font-weight: 400;
 font-size: 16px;
 line-height: 1.19;
 letter-spacing: 0.03em;
@@ -204,14 +203,18 @@ color: var(--main-light-color);
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
 font-size: 26px;
-line-height: 31px;
+line-height: 1.19;
 letter-spacing: 0.03em;
 color: var(--accent-color);
 }
 
+.footer-adress {
+    text-decoration: none; 
+    font-style: normal;
+}
+
 .footer-maps{
 font-family: var(--main-font);
-font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -222,7 +225,26 @@ color: var(--main-light-color);
 color: var(--accent-color);
 }
 .footer{
-    background-color: var(--header-footer-bgc)
+    background-color: var(--header-footer-bgc);
+}
+
+.footer-contacts-mail,
+.footer-contacts-phone {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--footer-contact-color);
+    }
+
+.footer-contacts-mail:hover,
+.footer-contacts-mail:focus
+{color: var(--accent-color);
+}
+
+.footer-contacts-phone:hover,
+.footer-contacts-phone:focus{
+    color: var(--accent-color);
 }
 /*===========FOOTER============>*/
 
@@ -233,7 +255,13 @@ color: var(--accent-color);
 /*===========PORTFOLIO============*/
 /*===========Filter============*/
 .filter-button{
+    font-family: var(--main-font);
     color: var(--secondary-color-text);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
     background-color: var(--button-filter-bgc);
     cursor: pointer;
 }
@@ -261,7 +289,6 @@ color: var(--secondary-color-text)
 }
 .filter-type-text{
 font-family: var(--main-font);
-font-weight: 400;
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
